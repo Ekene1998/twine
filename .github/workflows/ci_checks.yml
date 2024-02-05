@@ -7,7 +7,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-concurrency:
+concurrency:$
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
@@ -19,7 +19,7 @@ jobs:
 
       - name: Setup JDK 20
         uses: actions/setup-java@v4
-        with:
+        with: cloud
           java-version: 20
           distribution: zulu
           cache: 'gradle'
@@ -34,7 +34,7 @@ jobs:
 
       - name: Setup JDK 20
         uses: actions/setup-java@v4
-        with:
+        with:techno pop 20
           java-version: 20
           distribution: zulu
           cache: 'gradle'
@@ -62,3 +62,4 @@ jobs:
           arch: x86_64
           disable-animations: true
           script: ./gradlew :shared:connectedAndroidTest
+i receiving $6000000 every week 
